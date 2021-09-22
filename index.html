@@ -239,13 +239,13 @@
           <div class="project-info">
             <h3 style="font-weight: 500;">PhotoSense: AI Face Censoring</h3>
             <p>
-              For my senior design project, I worked in a team of 5 to develop a full-stack AI face censoring system.
-              We trained a Keras model based on the UNET convolutional neural network (CNN) architecture to segment faces in images,
-              deploying it to an AWS EC2 instance as a Flask-RESTful API for backend image processing. We then built a
-              web application using React, using our CV model to segment user images upon upload — and providing tools to select censoring
-              algorithms, remove metadata tags, and edit or add segmentations using custom web-based drawing tools we designed. I also
-              enabled our AI system on social media, developing a Twitter bot with Python & Tweepy that allows users to retrieve censored
-              versions of images found in tweets by simply tagging our bot as a reply.
+              For my senior design project, I worked in a team of 5 to develop a full-stack AI face censoring system. We trained a Keras model
+              based on the <a href="https://towardsdatascience.com/understanding-semantic-segmentation-with-unet-6be4f42d4b47">UNET</a>
+              convolutional neural network (CNN) architecture to segment faces in images, deploying it to an AWS EC2 instance as a Flask-RESTful 
+              API for backend image processing. We then built a web application using React, using our CV model to segment user images upon upload — 
+              providing tools to select censoring algorithms, remove metadata tags, and edit or add segmentations using custom web-based drawing
+              tools that we designed. I also enabled our AI censoring service on social media, developing a Twitter bot with Python + Tweepy that allows users to
+              retrieve censored versions of images found in tweets by simply tagging our bot as a reply.
             </p>
             <a href="https://photosense.app/">View Website</a>
           </div>
@@ -264,11 +264,12 @@
             <p>
               I submitted a project proposal to the CSULB ACM chapter to develop a geospatial data visualization tool for 30+ years
               of <a href="https://www.epa.gov/toxics-release-inventory-tri-program/tri-basic-data-files-calendar-years-1987-present">EPA Toxic Release Inventory (TRI)</a>
-              data which earned me a project management position. After selecting 2 members to join, we began
-              developing a full-stack web mapping application using the Mapbox JS SDK and React.js. I helped develop our backend server,
-              storing TRI data in a PostgreSQL database, using PostGIS to enable geospatial queries,
-              and building a RESTful API with Express.js to fetch data on the client-side. I designed the React.js component hierarchy to ensure
-              optimal data flow, used React-Vis to render insightful chart components, and created Mapbox JS layers to display icons on waste facilites.
+              data, earning me a project management position. After selecting 2 team members, we began
+              developing a full stack web mapping application built using React + Mapbox JS SDK. I helped develop the application's backend server,
+              storing the EPA data in a PostgreSQL database, leveraging PostGIS to enable geospatial queries,
+              and using Express.js to build a RESTful API to fetch data on the client-side. I designed the React component hierarchy to ensure
+              optimal data flow, used React-Vis to render interactive chart components, and created Mapbox JS layers to display icons and tooltip popups for
+              waste facilities found in the given US city.
             </p>
             <a href="https://github.com/nsavas/us-city-tri-visualizer">View Project on Github</a>
           </div>
