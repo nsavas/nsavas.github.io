@@ -47,7 +47,7 @@
     <div id="lead-content">
       <h1>Nathan Savas</h1>
       <h2>Computer Science Student</h2>
-      <a href="https://nsavas.github.io/nsavas_Resume.pdf" class="btn-rounded-white">My Resume</a>
+      <a href="https://nsavas.github.io/resume.pdf" class="btn-rounded-white">My Resume</a>
     </div>
     <!-- End #lead-content -->
 
@@ -73,9 +73,8 @@
             I am currently a
             <a href="https://www.csulb.edu/college-of-engineering/computer-engineering-computer-science">Computer
               Science</a>
-            student at California State University, Long Beach (Class of
-            2021). I'm looking to pursure a career as a Software Engineer
-            after graduation and I am always looking for new opportunities to
+            student at California State University, Long Beach expecting to graduate in December 2021. I'm looking to 
+            pursure a career as a Software Engineer after graduation and I am always looking for new opportunities to
             learn and grow. Feel free to
             <a href="mailto:nathan.savas@student.csulb.edu">shoot me an email</a>
             or reach out on
@@ -91,20 +90,21 @@
   <div id="experience" class="background-alt">
     <h2 class="heading" style="font-weight: 400;">Experience</h2>
     <div id="experience-timeline">
-      <div data-date="June 2020 – August 2021">
+      <div data-date="June 2020 – August 2020">
         <h3 style="font-weight: 500;">Amazon Web Services</h3>
         <h4 style="font-weight: 400;">Software Development Engineer Intern</h4>
         <ul>
           <li>
-            Worked with the AWS CodeGuru team to develop a visualization dashboard using React and Redux
-            for time based analysis of operational anomalies found in user accounts
+            Worked with the AWS CodeGuru team to develop a visualization dashboard using React, Redux,
+            and Redux-saga for time-based analysis of anomalies found in user accounts
           </li>
           <li>
-            Implemented UX features with React.js and Redux to provide various grouping and filtering
-            capabilities for account data
+            Developed an algorithm to track anomaly data over time — identifying overlapping intervals
+            and rendering results within custom Apache EChart components (Line & Gantt Chart)
           </li>
           <li>
-            Developed a Java API endpoint to query anomalies and associated data from a DynamoDB table
+            Implemented UX features (tested with Jest) to dynamically filter data, provide responsive tooltip
+            displays, and export data to various file formats
           </li>
         </ul>
       </div>
@@ -113,18 +113,15 @@
         <h4 style="font-weight: 400;">Software Development Intern</h4>
         <ul>
           <li>
-            Worked with the NX CAD Validation & Diagramming team to develop a
-            web based tool that consolidates design data through configured
-            reports
+            Worked with the NX CAD Validation team to build a SaaS application using AngularJS that
+            consolidates user design data by allowing customers to run custom reports on CAD models
           </li>
           <li>
-            Developed an internal JavaScript client library for the NX cloud
-            service to display report results within a navigator tree
+            Developed an internal JavaScript client library for NX cloud teams to provide abstractions
+            for handling API protocols and rendering report data in navigation tree components
           </li>
           <li>
-            Integrated tool with another library to tag design components in
-            the 3-D viewer with a bitmap image corresponding to each result
-            category
+            Integrated tool with another library to tag bitmap images directly within a WebGL viewer interface
           </li>
         </ul>
       </div>
@@ -133,9 +130,8 @@
         <h4 style="font-weight: 400;">Computer Science Instructor</h4>
         <ul>
           <li>
-            Designed and delivered a 12-week computer science course for a
-            class of fifteen K-12 students to promote computer science
-            education within the community
+            Designed and delivered a 12-week course to a class of fifteen K-12 students to introduce programming
+            fundamentals and promote CS education in the community
           </li>
           <li>
             Successfully analyzed and debugged code (Python) written by
@@ -155,7 +151,7 @@
     <h2 class="heading" style="font-weight: 400;">Education</h2>
     <div class="education-block">
       <h3>California State University, Long Beach</h3>
-      <span class="education-date">Graduation: <i>Spring 2021 (Expected)</i></span>
+      <span class="education-date">Graduation: <i>Dec 2021 (Expected)</i></span>
       <h4>Bachelor of Science in Computer Science</h4>
       <ul>
         <li>
@@ -165,22 +161,52 @@
           <strong>Relevant Coursework:</strong>
           <ul>
             <li>
+              CECS428: Analysis of Algorithms
+            </li>
+            <li>
               CECS451: Artificial Intelligence
             </li>
             <li>
-              CECS328: Data Structures & Algorithms
+              CECS341: Computer Architecture & Organization
             </li>
             <li>
-              CECS343: Introduction to Software Engineering
+              CECS474: Computer Network Interoperability
+            </li>
+            <li>
+              CECS491A: Computer Science Senior Project I
+            </li>
+            <li>
+              CECS491B: Computer Science Senior Project II
             </li>
             <li>
               CECS323: Database Fundamentals
             </li>
             <li>
-              CECS341: Computer Architecture
+              CECS328: Data Structures & Algorithms
+            </li>
+            <li>
+              CECS378: Intro to Computer Security
+            </li>
+            <li>
+              CECS327: Intro to Networks & Distributed Computing
+            </li>
+            <li>
+              CECS343: Intro to Software Engineering
             </li>
             <li>
               CECS277: Object Oriented Application Development
+            </li>
+            <li>
+              CECS326: Operating Systems
+            </li>
+            <li>
+              CECS342: Principles of Programming Languages
+            </li>
+            <li>
+              EE381: Probability & Statistics with Computing Applications
+            </li>
+            <li>
+              ENGR361: Scientific Research Communication
             </li>
           </ul>
         </li>
@@ -207,17 +233,42 @@
       <div class="row">
         <div class="project shadow-large">
           <div class="project-image">
-            <img src="images/epa.png" />
+            <img src="images/photosense.jpg" />
+          </div>
+          <!-- End .project-image -->
+          <div class="project-info">
+            <h3 style="font-weight: 500;">PhotoSense: AI Face Censoring</h3>
+            <p>
+              For my senior design project, I worked in a team of 5 to develop a full-stack AI face censoring system.
+              We trained a Keras model based on the UNET convolutional neural network (CNN) architecture to segment faces in images,
+              deploying it to an AWS EC2 instance as a Flask-RESTful API for backend image processing. We then built a
+              web application using React, using our CV model to segment user images upon upload — and providing tools to select censoring
+              algorithms, remove metadata tags, and edit or add segmentations using custom web-based drawing tools we designed. I also
+              enabled our AI system on social media, developing a Twitter bot with Python & Tweepy that allows users to retrieve censored
+              versions of images found in tweets by simply tagging our bot as a reply.
+            </p>
+            <a href="https://photosense.app/">View Website</a>
+          </div>
+          <!-- End .project-info -->
+        </div>
+
+        <div class="project shadow-large">
+          <div class="project-image">
+            <img src="images/epa.jpg" />
           </div>
           <!-- End .project-image -->
           <div class="project-info">
             <h3 style="font-weight: 500;">
-              US Chemical Release Visualizer (In Progress)
+              US Chemical Release Visualizer
             </h3>
             <p>
-              Leading a team of 3 in creating a web application with React.js
-              to visualize over 30 years of EPA chemical release data (~5GB)
-              within a given US city
+              I submitted a project proposal to the CSULB ACM chapter to develop a geospatial data visualization tool for 30+ years
+              of <a href="https://www.epa.gov/toxics-release-inventory-tri-program/tri-basic-data-files-calendar-years-1987-present">EPA Toxic Release Inventory (TRI)</a>
+              data which earned me a project management position. After selecting 2 members to join, we began
+              developing a full-stack web mapping application using the Mapbox JS SDK and React.js. I helped develop our backend server,
+              storing TRI data in a PostgreSQL database, using PostGIS to enable geospatial queries,
+              and building a RESTful API with Express.js to fetch data on the client-side. I designed the React.js component hierarchy to ensure
+              optimal data flow, used React-Vis to render insightful chart components, and created Mapbox JS layers to display icons on waste facilites.
             </p>
             <a href="https://github.com/nsavas/us-city-tri-visualizer">View Project on Github</a>
           </div>
@@ -227,15 +278,17 @@
 
         <div class="project shadow-large">
           <div class="project-image">
-            <img src="images/spotabubble.png" />
+            <img src="images/spotify.jpg" />
           </div>
           <!-- End .project-image -->
           <div class="project-info">
             <h3 style="font-weight: 500;">Spot A Bubble</h3>
             <p>
-              I developed a React application using D3.js and the Spotify API
-              to allow users to visualize their top genres and artists via an
-              interactive bubble chart
+              I developed a React.js web application using D3.js and the Spotify API to visualize listening data in an interactive
+              bubble chart based on top genres and artists found in user accounts. Each bubble represents a genre whose radius is
+              determined by how many top artists in a user account correspond to the genre. The chart uses a D3.js force
+              simulation object for the chart's bubble physics as well as its collision effects. Tooltip displays are provided to view
+              the artist data for a given bubble. The app also uses oAuth2.0 for user authentication and Heroku as a deployment service. 
             </p>
             <a href="https://github.com/nsavas/spot-a-bubble">View Project on Github</a>
           </div>
@@ -243,22 +296,6 @@
         </div>
         <!-- End .project -->
 
-        <div class="project shadow-large">
-          <div class="project-image">
-            <img src="images/cellphone.png" />
-          </div>
-          <!-- End .project-image -->
-          <div class="project-info">
-            <h3 style="font-weight: 500;">Cell Phone Interface</h3>
-            <p>
-              In a team of 3, I worked on an object oriented Java program as
-              part of an in class project that provides a cell phone interface
-              to carry out basic cell phone functionality
-            </p>
-            <a href="https://github.com/nsavas/cecs274-cellphone-project">View Project on Github</a>
-          </div>
-          <!-- End .project-info -->
-        </div>
         <!-- End .project -->
       </div>
     </div>
@@ -270,24 +307,31 @@
     <ul>
       <li>Java</li>
       <li>JavaScript</li>
+      <li>TypeScript</li>
       <li>Python</li>
       <li>C++</li>
       <li>SQL</li>
       <li>HTML</li>
       <li>CSS</li>
-      <li>Assembly</li>
+      <li>React.js</li>
+      <li>Redux</li>
+      <li>Express.js</li>
+      <li>Flask</li>
+      <li>Redis</li>
       <li>Git</li>
       <li>Node.js</li>
-      <li>React</li>
-      <li>D3</li>
+      <li>AWS EC2</li>
+      <li>AWS S3</li>
+      <li>AWS Lambda</li>
+      <li>AWS DynamoDB</li>
       <li>PostgreSQL</li>
       <li>Matplotlib</li>
       <li>Pandas</li>
       <li>Numpy</li>
       <li>Sci-Kit Learn</li>
+      <li>JIRA</li>
       <li>Jupyter Notebooks</li>
-      <li>Visual Studio</li>
-      <li>Visual Studio Code</li>
+      <li>VS Code</li>
       <li>Eclipse</li>
     </ul>
   </div>
